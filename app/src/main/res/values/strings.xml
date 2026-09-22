@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Copy Text Floating</string>
+    <string name="desc_bubble">Tombol mengambang</string>
+    <string name="hint_enable_overlay">Aktifkan izin tampil di atas aplikasi lain</string>
+    <string name="btn_start">Aktifkan Bubble</string>
+    <string name="btn_stop">Matikan Bubble</string>
+    <string name="ocr_success">Teks berhasil disalin!</string>
+    <string name="ocr_empty">Tidak ada teks terdeteksi</string>
+    <string name="ocr_loading">Mengenali teks…</string>
+</resources>

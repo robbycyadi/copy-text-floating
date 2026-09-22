@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Bubble utama -->
+    <LinearLayout
+        android:id="@+id/bubbleView"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_bubble"
+        android:gravity="center"
+        android:elevation="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COPY"
+            android:textColor="#FFFFFF"
+            android:textSize="8sp"
+            android:letterSpacing="0.1"/>
+    </LinearLayout>
+
+    <!-- Menu expand -->
+    <LinearLayout
+        android:id="@+id/bubbleMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/bg_result"
+        android:elevation="8dp"
+        android:padding="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnScanFull"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="📸 Scan Layar"
+            style="@style/Widget.Material3.Button"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnScanArea"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="✂️ Pilih Area"
+            style="@style/Widget.Material3.Button.TonalButton"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCloseBubble"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Tutup"
+            style="@style/Widget.Material3.Button.TextButton"/>
+
+    </LinearLayout>
+</FrameLayout>
