@@ -34,6 +34,8 @@ class FloatingService : Service() {
 
     companion object {
         var isRunning = false
+        // Untuk dipanggil CropActivity
+        var instance: FloatingService? = null
     }
 
     private lateinit var windowManager: WindowManager
@@ -354,11 +356,6 @@ class FloatingService : Service() {
         if (!isResultVisible) return
         try { windowManager.removeView(resultView) } catch (_: Exception) {}
         isResultVisible = false
-    }
-
-    // Untuk dipanggil CropActivity
-    companion object {
-        var instance: FloatingService? = null
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
